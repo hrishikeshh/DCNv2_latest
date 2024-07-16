@@ -8,6 +8,50 @@ It was confirmed that pytorch1.11 worked, but not compatible with previous pytor
 It's suggested using latest stable pytorch 1.11 to start your project.
 
 
+---
+## Setup
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/hrishikeshh/DCNv2_latest.git
+    cd DCNv2_latest
+    ```
+
+2. Create a virtual environment:
+    ```sh
+    python -m venv venv
+    ```
+
+3. Activate the virtual environment:
+    - On Windows:
+        ```sh
+        .\venv\Scripts\activate
+        ```
+    - On macOS and Linux:
+        ```sh
+        source venv/bin/activate
+        ```
+
+4. Install dependencies:
+    - If you are going to use in [ISNet](https://github.com/hrishikeshh/ISNet)
+        ```sh
+        # Since ISNet requires DCNv2 compilation in torch 1.11 and CUDA 11.1
+        pip install torch==1.11.0
+        ```
+
+    - Other use
+        ```sh
+        pip install -r requirements.txt
+        ```
+
+5. Build
+    
+    ```sh
+    python3 setup.py build develop
+    ```
+
+
+
 ## Install
 
 ```bash
